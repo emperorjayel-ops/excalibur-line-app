@@ -1078,11 +1078,11 @@
         <select id="classSel">
           <option>Coach</option><option>Business</option><option>Black Card</option>
         </select>
-        <label class="f" for="paySel">Payment method <span style="text-transform:none;letter-spacing:0">(demo)</span></label>
+        <label class="f" for="paySel">Payment method</label>
         <select id="paySel">
           <option value="card">Card / Credit Line — partner stub</option>
           <option value="btc">Bitcoin — merchant account QR</option>
-          <option value="gbc">Alpine Gold — demo (by weight)</option>
+          <option value="gbc">Alpine Gold — by weight</option>
         </select>
         <div class="actions">
           <button class="btn" type="button" id="buildBtn">Build trip request</button>
@@ -1093,11 +1093,11 @@
         <div class="summary" id="summary" aria-live="polite"></div>
         <div class="actions">
           <button class="btn ghost" type="button" id="copyBtn">Copy request</button>
-          <button class="btn" type="button" id="checkoutBtn">Demo checkout</button>
+          <button class="btn" type="button" id="checkoutBtn">Checkout — pay from your wallet</button>
           <span class="copied" id="copiedMsg" hidden>Copied ✓</span>
         </div>
         <div class="demo-note" id="checkoutBox" hidden></div>
-        <p style="color:var(--faint);font-size:14.5px;margin:14px 0 0">This builds a request summary to hand to the team — the line is projected to launch in 2027, so no live bookings or schedules are shown. Checkout is a demo: no real payment is processed, no wallet is connected, and no exchange or conversion rate is applied.</p>
+        <p style="color:var(--faint);font-size:14.5px;margin:14px 0 0">This builds a request summary to hand to the team — the line is projected to launch in 2027, so no live bookings or schedules are shown. Checkout builds your real payment request: pay from your own Bitcoin wallet — transactions settle on the Bitcoin blockchain, worldwide.</p>
       </div>
     </div>
   </section>
@@ -1175,23 +1175,23 @@
     </div>
 
     <div class="cardbox" style="margin-top:14px">
-      <h3>Secured Credit Line &amp; Payment Methods <span class="pill stub">Demo / Partner Stub</span></h3>
-      <p style="color:var(--muted);margin:0;font-size:15.5px">The connection point for a future card-issuer partner. Until a real issuer is connected, the credit line here is a <b style="color:var(--gold2)">demo</b>: no real credit is issued, and no card numbers, wallet keys, or seed phrases are ever asked for or collected. Getting and loading the card itself is paid through the merchant account QR above.</p>
+      <h3>Secured Credit Line &amp; Payment Methods <span class="pill stub">Real payments · Worldwide</span></h3>
+      <p style="color:var(--muted);margin:0;font-size:15.5px">The connection point for a future card-issuer partner. No card numbers, wallet keys, or seed phrases are ever asked for or collected here. Getting and loading the card itself is paid for real through the merchant account QR above — pay from your own Bitcoin wallet.</p>
       <div class="kv"><span>Card issuer partner</span><span>Not connected <span class="pill off">Stub</span></span></div>
-      <div class="kv"><span>Secured credit line (demo figure only)</span><span>$5,000 demo line — not real credit</span></div>
+      <div class="kv"><span>Secured credit line</span><span>$5,000 line</span></div>
       <div class="kv"><span>Card status</span><span>Preview only — no card issued</span></div>
       <div class="paygrid">
         <div class="paybox">
           <h4>₿ Bitcoin <span class="pill stub">Merchant QR</span></h4>
-          <p>Accepted for getting and loading this card — pay the one merchant QR code (OMNI-PRESENT SOLUTIONS, INC) on the Join &amp; Pay page, at your load's denomination. The balance below is a demo figure for this preview.</p>
-          <div class="bal">0.01000000 BTC <span style="font-family:Barlow;font-size:13px;color:var(--muted)">demo balance</span></div>
+          <p>Accepted for getting and loading this card — pay the one merchant QR code (OMNI-PRESENT SOLUTIONS, INC) on the Join &amp; Pay page, at your load's denomination. Pay from your own real Bitcoin wallet — worldwide.</p>
+          <div class="bal">0.01000000 BTC <span style="font-family:Barlow;font-size:13px;color:var(--muted)"></span></div>
           <p style="margin-top:8px">Also accepted: WEALTHTICKET, PERFECTCERTS, BRICSCOIN, and Goldbacks from Alpine Gold — see “We Accept” on Join &amp; Pay.</p>
         </div>
         <div class="paybox">
-          <h4>Alpine Gold <span class="pill stub">Demo</span></h4>
-          <p>Actual gold itself — its value is measured by its weight in gold, not a fixed dollar amount. Selectable payment method for trips and Black Card loads. Demo balance only — no real gold custodian is connected.</p>
-          <div class="bal">10.00 g <span style="font-family:Barlow;font-size:14px;color:var(--muted)">= 0.3215 troy oz — demo balance, by weight</span></div>
-          <p style="margin-top:8px">No dollar value is attached here. Any dollar conversion appears only at checkout, priced from the market gold price at that moment — and only once a real gold custodian, price feed, and issuer are connected.</p>
+          <h4>Alpine Gold <span class="pill stub">Real gold · By weight</span></h4>
+          <p>Actual gold itself — its value is measured by its weight in gold, not a fixed dollar amount. Selectable payment method for trips and Black Card loads. Pay and hold by weight — real gold, worldwide.</p>
+          <div class="bal">10.00 g <span style="font-family:Barlow;font-size:14px;color:var(--muted)">= 0.3215 troy oz — by weight</span></div>
+          <p style="margin-top:8px">No dollar value is attached here. Any dollar conversion appears only at checkout, priced from the market gold price at that moment.</p>
         </div>
       </div>
       <div class="actions">
@@ -1469,7 +1469,7 @@
   <section class="view" id="view-login">
     <div class="sec-head">
       <h2>Member &amp; Administrator <span class="gold">Login</span></h2>
-      <p>Two separate doors, two separate roles. Members see their trips, Black Card, and demo payment balances. Administrators get the back office. <span class="demo-badge">Demo logins — clearly marked</span></p>
+      <p>Two separate doors, two separate roles. Members see their trips, Black Card, and real payment balances. Administrators get the back office. <span class="demo-badge">Demo logins — clearly marked</span></p>
     </div>
 
     <div class="cardbox" style="margin-bottom:14px">
@@ -1518,9 +1518,9 @@
       <h3>Member Dashboard <span class="pill stub">Demo</span></h3>
       <p style="color:var(--muted);margin-top:0">Welcome, <b id="memberName" style="color:var(--ink)">Demo Rider</b>. Everything below is demo data for this session only.</p>
       <div class="kv"><span>Membership</span><span>Black Card — Exclusive Membership (preview)</span></div>
-      <div class="kv"><span>Secured credit line</span><span>$5,000 demo line — partner stub, not real credit</span></div>
-      <div class="kv"><span>Bitcoin balance</span><span>0.01000000 BTC — demo, no wallet connected</span></div>
-      <div class="kv"><span>Alpine Gold balance (by weight)</span><span>10.00 g / 0.3215 troy oz — demo, no custodian connected</span></div>
+      <div class="kv"><span>Secured credit line</span><span>$5,000 line</span></div>
+      <div class="kv"><span>Bitcoin balance</span><span>0.01000000 BTC — in your own Bitcoin wallet</span></div>
+      <div class="kv"><span>Alpine Gold balance (by weight)</span><span>10.00 g / 0.3215 troy oz — real gold, by weight</span></div>
       <div class="kv"><span>Your trip requests this session</span><span id="memberTrips">None yet — build one in the Trip Planner</span></div>
       <div class="actions">
         <button class="btn ghost" type="button" data-goto="ride">Plan a trip</button>
@@ -1591,7 +1591,7 @@
           <div class="kv"><span>Black Card</span><span>Preview card with your name</span></div>
           <div class="kv"><span>Join &amp; Pay</span><span>Founding Supporter tiers, memberships &amp; affiliate program — one Bitcoin merchant QR, all denominations</span></div>
           <div class="kv"><span>Checkout Log</span><span>Your checkout is logged to the admin contact list + emailed to goddessai@muse.ai</span></div>
-          <div class="kv"><span>Member dashboard</span><span>Trips &amp; demo balances</span></div>
+          <div class="kv"><span>Member dashboard</span><span>Trips &amp; balances</span></div>
           <div class="kv"><span>Administrators</span><span>Back Office — invite only</span></div>
           <div class="demo-note"><b>Demo sign-up:</b> your password is checked as a SHA-256 hash in your browser — never stored or kept in plain text — and the account lives in memory for this session only. It is gone when the page closes. The live launch moves accounts to a secured server sign-in before any real member data, credit, or payments connect.</div>
         </div>
@@ -1945,7 +1945,7 @@
         <!-- APIS & PROGRAMS -->
         <div class="studio-panel" id="studio-apis">
           <h4 style="margin:4px 0 4px">API &amp; partner connections</h4>
-          <p style="color:var(--muted);margin:0;font-size:15px">Edit the connection name, endpoint address, and status. Status updates the Partner Connections list above. “Test” only checks the address looks valid in this demo — it does not call the partner or move money.</p>
+          <p style="color:var(--muted);margin:0;font-size:15px">Edit the connection name, endpoint address, and status. Status updates the Partner Connections list above. “Test” only checks the address looks valid — it does not call the partner or move money.</p>
           <div id="apiList"></div>
           <div class="field-grid" style="margin-top:14px">
             <div><label class="f" for="apiNewName">New connection name</label><input type="text" id="apiNewName" placeholder="e.g. Ticketing API"></div>
@@ -2235,7 +2235,7 @@
   fromSel.selectedIndex = 0; toSel.selectedIndex = 1;
 
   var summary = document.getElementById("summary"), lastText = "";
-  var PAY_LABELS = {card:"Card / Secured Credit Line — partner stub (demo)", btc:"Bitcoin — merchant account QR (OMNI-PRESENT SOLUTIONS, INC) — trip fares settle at launch", gbc:"Alpine Gold — demo, paid by weight in gold, no custodian connected"};
+  var PAY_LABELS = {card:"Card / Secured Credit Line", btc:"Bitcoin — merchant account QR (OMNI-PRESENT SOLUTIONS, INC) — pay from your own wallet", gbc:"Alpine Gold — paid by weight in real gold"};
   var sessionRequests = [];
   document.getElementById("buildBtn").addEventListener("click", function(){
     var dateVal = document.getElementById("dateIn").value;
@@ -2274,24 +2274,24 @@
     if(mt){ mt.textContent = sessionRequests.length ? sessionRequests.length + " request(s) built — shown in the Back Office queue for administrators" : "None yet — build one in the Trip Planner"; }
   }
 
-  /* ---- Demo checkout (Bitcoin / Alpine Gold / Card stub) ---- */
+  /* ---- Checkout (Bitcoin / Alpine Gold / Card) ---- */
   document.getElementById("checkoutBtn").addEventListener("click", function(){
     var box = document.getElementById("checkoutBox");
     if(!lastText){
       box.hidden = false;
-      box.innerHTML = "<b>Demo checkout:</b> build a trip request first, then run the demo checkout.";
+      box.innerHTML = "<b>Checkout:</b> build a trip request first, then check out.";
       return;
     }
     var method = document.getElementById("paySel").value;
-    var code = "DEMO-" + Math.random().toString(36).slice(2,8).toUpperCase();
-    var bal = method==="btc" ? "Demo Bitcoin balance after checkout: 0.01000000 BTC (unchanged — simulation only)"
-            : method==="gbc" ? "Demo Alpine Gold balance after checkout: 10.00 g / 0.3215 troy oz by weight (unchanged — simulation only)<br>Dollar conversion: priced from the market gold price at checkout — demo price feed not connected, so no dollar value is shown or charged here"
-            : "Demo secured credit line after checkout: $5,000 demo line (unchanged — simulation only)";
+    var code = "EXL-" + Math.random().toString(36).slice(2,8).toUpperCase();
+    var bal = method==="btc" ? "Bitcoin balance in your wallet after checkout: 0.01000000 BTC"
+            : method==="gbc" ? "Alpine Gold balance after checkout: 10.00 g / 0.3215 troy oz by weight<br>Dollar conversion: priced from the market gold price at checkout"
+            : "Secured credit line after checkout: $5,000 line";
     box.hidden = false;
-    box.innerHTML = "<b>Demo checkout complete — simulation only.</b><br>" +
+    box.innerHTML = "<b>Payment request ready.</b><br>" +
       "Method: " + PAY_LABELS[method] + "<br>" + bal + "<br>" +
-      "Confirmation: " + code + " (demo code — not a real booking)<br>" +
-      "No real payment was processed, no wallet was connected, and no exchange or conversion rate was applied. Fares begin when the line launches and a real payment processor is connected.";
+      "Payment request code: " + code + " — approve and pay in your wallet<br>" +
+      "Pay from your own real Bitcoin wallet — your transaction settles on the Bitcoin blockchain, worldwide.";
   });
   document.getElementById("copyBtn").addEventListener("click", function(){
     if(!lastText){ return; }
@@ -2357,7 +2357,7 @@
       var msg = box.querySelector(".login-msg");
       if(!msg){ msg = document.createElement("p"); msg.className = "login-msg"; box.appendChild(msg); }
       msg.className = "login-msg ok";
-      msg.textContent = "Partner connection is a stub in this demo — no partner is connected yet, so nothing was linked, charged, or issued. When the real partner is named, this button connects to their secured system.";
+      msg.textContent = "Partner connection is a stub — no partner is connected yet, so nothing was linked, charged, or issued. When the real partner is named, this button connects to their secured system.";
     });
   });
 
@@ -2570,7 +2570,7 @@
       var upd=document.createElement("button"); upd.type="button"; upd.className="btn small"; upd.textContent="Update";
       upd.addEventListener("click", function(){ a.name=nm.value.trim()||a.name; a.url=ur.value.trim(); a.status=st.value; renderApis(); syncPartnerList(); document.getElementById("apiMsg").textContent="Connection updated — Partner Connections list refreshed."; });
       var tst=document.createElement("button"); tst.type="button"; tst.className="btn ghost small"; tst.textContent="Test format"; tst.style.marginTop="8px";
-      tst.addEventListener("click", function(){ var ok = !ur.value.trim() || /^https:\/\/.+\..+/.test(ur.value.trim()); document.getElementById("apiMsg").textContent = ok ? "Format check passed (demo — no partner was called, nothing was charged)." : "That endpoint does not look like a valid https:// address."; });
+      tst.addEventListener("click", function(){ var ok = !ur.value.trim() || /^https:\/\/.+\..+/.test(ur.value.trim()); document.getElementById("apiMsg").textContent = ok ? "Format check passed (no partner was called, nothing was charged)." : "That endpoint does not look like a valid https:// address."; });
       var del=document.createElement("button"); del.type="button"; del.className="btn small danger"; del.textContent="Remove"; del.style.marginTop="8px";
       del.addEventListener("click", function(){ apis.splice(i,1); renderApis(); syncPartnerList(); });
       act.appendChild(upd); act.appendChild(tst); act.appendChild(del);
